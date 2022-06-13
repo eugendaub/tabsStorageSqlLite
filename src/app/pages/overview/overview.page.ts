@@ -27,5 +27,9 @@ export class OverviewPage implements OnInit {
 
   ngOnInit() {
   }
+  async ionViewWillEnter() {
+  console.log('ionViewWillEnter');
+    this.loadData();
+  }
 
 }
